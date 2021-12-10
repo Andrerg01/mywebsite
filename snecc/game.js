@@ -17,7 +17,7 @@ function init(){
 function main(currentTime) {
     if (gameOver){
         if (confirm(`Score: ${SCORE}\nPress Ok and try again`)){
-            window.location='/MyWebsite/snecc'
+            window.location='/MyWebsite/snecc/index.html'
         }
         return
     }
