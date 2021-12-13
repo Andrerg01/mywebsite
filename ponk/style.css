@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+.title{
+    font-family: 'Space Mono', monospace;
+    font-size: 2rem;
+    z-index: 10;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    inset: 0;
+    margin: 0;
+    flex-direction: column;
+    color: white
+}
+.subtitle{
+    font-size: 1rem;
+    font-family: 'Space Mono', monospace;
+    margin-top: .5rem;
+    color: white
+}
+
+.hide{
+    display: none
+}
+
+.ball{
+    --ball-x: 500;
+    --ball-y: 500;
+    --ball-size: 40px;
+    position: absolute;
+    background-color:rgb(0, 223, 0);
+    width: var(--ball-size);
+    height: var(--ball-size);
+    left: calc(var(--ball-x)*1px);
+    top: calc(var(--ball-y)*1px);
+    border-radius: 40%;
+}
+
+.mid-line{
+    position: absolute;
+    height: 100%;
+    left: 50vw;
+    width: 0px;
+    border-left: 1vh dotted white
+    
+}
+
+.paddle{
+    --paddle-height: 100;
+    --paddle-width: 30;
+    position: absolute;
+    background-color:rgb(0, 223, 0);
+    width: calc(var(--paddle-width)*1px);
+    height: calc(var(--paddle-height)*1px);
+    border-radius: 15%;
+}
+
+.paddle-1{
+    --paddle-1-y: 200;
+    top: calc(var(--paddle-1-y)*1px);
+    left: 5%;
+
+}
+
+.paddle-2{
+    --paddle-1-y: 50;
+    top: calc(var(--paddle-1-y)*1px);
+    right: 5%;
+}
+
+.score{
+    font-family: 'Space Mono', monospace;
+    color: white;
+    font-size: 10vh;
+    position: absolute;
+    top: 10vh;
+}
+
+.score-1{
+    left: 15%;
+}
+
+.score-2{
+    right: 15%;
+}
+
+.bound{
+    --bound-thickness: 5%;
+}
+
+.bottom-bound{
+    position: absolute;
+    top: calc(100% - var(--bound-thickness));
+    background-color: rgb(209, 0, 228);
+    width: 100%;
+    height: 5%;
+}
+
+.top-bound{
+    position: absolute;
+    bottom: 95%;
+    background-color: rgb(209, 0, 228);
+    width: 100%;
+    height: 5%;
+}
+
+.left-bound{
+    position:absolute;
+    background-color: blue;
+    top: 5%;
+    left: 0;
+    height: 90%;
+    width: 5%;
+}
+.right-bound{
+    position:absolute;
+    background-color: orange;
+    top: 5%;
+    left: 95%;
+    height: 90%;
+    width: 5%;
+}
+
+
+
