@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+.countdown-clock{
+    background-color: rgb(0, 132, 209);
+    position: relative;
+    width: 40%;
+    height: 150px;
+    left: 30%;
+    top: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.coutdown-number-box{
+    background-color: rgb(173, 144, 255);
+    position: relative;
+    width: 20%;
+    height: 80%;
+    text-align: center;
+    margin-top: 2.5%;
+    border-radius: 10%;
+}
+
+.countdown-number-title{
+    position: relative;
+    width: 75%;
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    vertical-align: middle;
+    margin-left: 12.5%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 5%;
+}
+
+.countdown-number-text{
+    background-color: rgb(223, 255, 247);
+    position:relative;
+    height: 50%;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 10%;
+    margin-top: 0%;
+    font-size: 3rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    color:rgb(85, 85, 85)
+}
+
+
